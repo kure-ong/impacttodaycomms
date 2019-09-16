@@ -135,7 +135,7 @@ gulp.task('serve', function() {
   gulp.watch('src/**/*.(html|nunjucks|njk)', gulp.series('nunjucks'));
   gulp.watch('src/img/**/*.+(jpg|jpeg|gif|png|svg)', gulp.series('img'));
   gulp.watch(['src/fonts/**/*'], gulp.series('copy:files'));
-  // gulp.watch(['src/.htaccess'], gulp.series('copy:rootFiles'));
+  // gulp.watch(['src/.htaccess'], gdulp.series('copy:rootFiles'));
   gulp.watch(['src/data/**/*','src/scripts/**/*'], gulp.series('copy:code'));
 });
 
