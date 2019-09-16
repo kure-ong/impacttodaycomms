@@ -104,13 +104,13 @@ gulp.task('copy:files', function () {
     .pipe(browserSync.stream());
 });
 
-gulp.task('copy:rootFiles', function () {
-  return gulp.src([
-    'src/.htaccess'
-  ],{base: 'src/'})
-    .pipe(gulp.dest(rootDir))
-    .pipe(browserSync.stream());
-});
+// gulp.task('copy:rootFiles', function () {
+//   return gulp.src([
+//     'src/.htaccess'
+//   ],{base: 'src/'})
+//     .pipe(gulp.dest(rootDir))
+//     .pipe(browserSync.stream());
+// });
 
 gulp.task('copy:code', function () {
   return gulp.src([
@@ -135,9 +135,19 @@ gulp.task('serve', function() {
   gulp.watch('src/**/*.(html|nunjucks|njk)', gulp.series('nunjucks'));
   gulp.watch('src/img/**/*.+(jpg|jpeg|gif|png|svg)', gulp.series('img'));
   gulp.watch(['src/fonts/**/*'], gulp.series('copy:files'));
-  gulp.watch(['src/.htaccess'], gulp.series('copy:rootFiles'));
+  // gulp.watch(['src/.htaccess'], gulp.series('copy:rootFiles'));
   gulp.watch(['src/data/**/*','src/scripts/**/*'], gulp.series('copy:code'));
 });
 
-gulp.task('build', gulp.series('clean','copy:rootFiles','copy:files','copy:code','scripts:vendor','modernizr','scripts','sass','nunjucks','img'));
+gulp.task('build', gulp.series(
+  'clean',
+  // 'copy:rootFiles',
+  'copy:files',
+  'copy:code',
+  'scripts:vendor',
+  'modernizr',
+  'scripts',
+  'sass',
+  'nunjucks',
+  'img'));
 gulp.task('default', gulp.series('build','serve'));
