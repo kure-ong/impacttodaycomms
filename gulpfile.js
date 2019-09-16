@@ -16,6 +16,8 @@ var gulp = require('gulp'),
 
 sass.compiler = require('node-sass');
 
+var rootDir = 'dist',
+publicDir = 'dist';
 
 gulp.task('clean', function (done) {
   del(['dist/**/*']);
@@ -37,7 +39,7 @@ gulp.task('sass', function () {
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(plugins))
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest(publicDir + '/css'))
     .pipe(browserSync.stream());
 });
 
@@ -49,21 +51,21 @@ gulp.task('scripts:vendor', function() {
     'node_modules/imagesloaded/imagesloaded.pkgd.min.js',
   ])
     .pipe(gulpif('!jquery.min.js',concat('bundle.js')))
-    .pipe(gulp.dest('dist/js/vendor'))
+    .pipe(gulp.dest(publicDir + '/js/vendor'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('scripts', function() {
   return gulp.src(['src/js/**/*.js', '!src/js/vendor/**'])
     // .pipe(uglify()) //need to install uglify plugin to use
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest(publicDir + '/js'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('modernizr', function() {
   return gulp.src(['src/js/**/*.js', '!src/js/vendor/**'])
     .pipe(modernizr())
-    .pipe(gulp.dest('dist/js/vendor'))
+    .pipe(gulp.dest(publicDir + '/js/vendor'))
     .pipe(browserSync.stream());
 });
 
@@ -75,7 +77,7 @@ gulp.task('nunjucks', function() {
       path: ['src/templates']
     }))
   // output files in app folder
-  .pipe(gulp.dest('dist'))
+  .pipe(gulp.dest(rootDir))
   .pipe(browserSync.stream());
 });
 
@@ -91,14 +93,22 @@ gulp.task('img', function() {
       ])
     )
     )
-		.pipe(gulp.dest('dist/img'));
-});
+		.pipe(gulp.dest(publicDir + '/img'));
+  });
 
 gulp.task('copy:files', function () {
   return gulp.src([
     'src/fonts/**/*',
   ],{base: 'src/'})
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest(publicDir))
+    .pipe(browserSync.stream());
+});
+
+gulp.task('copy:rootFiles', function () {
+  return gulp.src([
+    'src/.htaccess'
+  ],{base: 'src/'})
+    .pipe(gulp.dest(rootDir))
     .pipe(browserSync.stream());
 });
 
@@ -107,7 +117,7 @@ gulp.task('copy:code', function () {
     'src/data/**/*',
     'src/scripts/**/*',
   ],{base: 'src/'})
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest(publicDir))
     .pipe(browserSync.stream());
 });
 
@@ -125,8 +135,9 @@ gulp.task('serve', function() {
   gulp.watch('src/**/*.(html|nunjucks|njk)', gulp.series('nunjucks'));
   gulp.watch('src/img/**/*.+(jpg|jpeg|gif|png|svg)', gulp.series('img'));
   gulp.watch(['src/fonts/**/*'], gulp.series('copy:files'));
+  gulp.watch(['src/.htaccess'], gulp.series('copy:rootFiles'));
   gulp.watch(['src/data/**/*','src/scripts/**/*'], gulp.series('copy:code'));
 });
 
-gulp.task('build', gulp.series('clean','copy:files','copy:code','scripts:vendor','modernizr','scripts','sass','nunjucks','img'));
+gulp.task('build', gulp.series('clean','copy:rootFiles','copy:files','copy:code','scripts:vendor','modernizr','scripts','sass','nunjucks','img'));
 gulp.task('default', gulp.series('build','serve'));
