@@ -1,0 +1,7 @@
+.vertMiddler-md {
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

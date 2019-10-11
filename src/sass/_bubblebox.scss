@@ -1,0 +1,58 @@
+.bubbleBox {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: 3rem;
+  }
+
+  &_header {
+    position: relative;
+    @include media-breakpoint-up(md) {
+      text-align: right;
+    }
+  }
+
+  &_body {
+    position: relative;
+    display: flex;
+  }
+
+  &_title {
+    color: $white;
+    position: relative;
+    z-index: 1;
+
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      top: 20%;
+      right: rem(15);
+    }
+  }
+
+  &_text {
+    position: relative;
+
+    @include media-breakpoint-up(md) {
+      width: 90%;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(0,-30%);
+    }
+  }
+
+  &_img {
+    width: 35%;
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    opacity: 0.7;
+
+    @include media-breakpoint-up(md) {
+      position: relative;
+      width: 80%;
+      opacity: 1;
+    }
+  }
+}

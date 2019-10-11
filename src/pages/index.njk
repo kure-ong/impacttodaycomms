@@ -1,13 +1,99 @@
 {% extends "layout.njk" %}
 {% import 'macros/nav.njk' as nav %}
+{% import 'macros/hero.njk' as hero %}
 
 {% block content %}
-<header>
+  <header>
     {{nav.active('home')}}
-</header>
+  </header>
 
-<main class="home">
+  <main class="home">
+    {{hero.at('home')}}
 
-</main>
+    <div class="container sectionBox">
+      <div class="row">
+        <div class="col-lg-8 col-md-7">
+          <div class="sectionBox_img">
+            <a href="strategicapproach.html">
+              <img src="img/index_section_sa.jpg" alt="Strategic Approach">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-5">
+          <div class="sectionBox_content">
+            <h2 class="sectionBox_header">Strategic <br class="d-none d-block-md">Approach</h2>
+            <p class="sectionBox_text">
+              We start with a strategy to ensure that your stakeholders will see your messages consistently on multiple communication platforms.
+            </p>
+            <a class="cta_button" href="strategicapproach.html"><span>Read More</span><img src="img/arrow.svg" alt="Read more"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container sectionBox">
+      <div class="row">
+        <div class="col-lg-8 col-md-7 order-md-12">
+          <div class="sectionBox_img">
+            <a href="editorialservices.html">
+              <img src="img/index_section_es.jpg" alt="Editorial Services">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-5 order-md-1">
+          <div class="sectionBox_content">
+            <h2 class="sectionBox_header">Editorial <br class="d-none d-block-md">Services</h2>
+            <p class="sectionBox_text">
+              We develop the persuasive content to appeal to your stakeholders for each communication platform.
+            </p>
+            <a class="cta_button" href="editorialservices.html"><span>Read More</span><img src="img/arrow.svg" alt="Read more"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container sectionBox">
+      <div class="row">
+        <div class="col-lg-8 col-md-7">
+          <div class="sectionBox_img">
+            <a href="projectmanagement.html">
+              <img src="img/index_section_pm.jpg" alt="Project Management">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-5">
+          <div class="sectionBox_content">
+            <h2 class="sectionBox_header">Project <br class="d-none d-block-md">Management</h2>
+            <p class="sectionBox_text">
+              We manage the communication programmes from start to end to achieve successful outcomes.
+            </p>
+            <a class="cta_button" href="projectmanagement.html"><span>Read More</span><img src="img/arrow.svg" alt="Read more"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container sectionBox">
+      <div class="row">
+        <div class="col-lg-8 col-md-7 order-md-12">
+          <div class="sectionBox_img">
+            <a href="aboutus.html">
+              <img src="img/index_section_sa.jpg" alt="About Us">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-5 order-md-1">
+          <div class="sectionBox_content">
+            <h2 class="sectionBox_header">About Us</h2>
+            <p class="sectionBox_text">
+              Contact us to find out how we can start a conversation with your stakeholders.
+            </p>
+            <a class="cta_button" href="aboutus.html"><span>Read More</span><img src="img/arrow.svg" alt="Read more"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
 
 {% endblock %}

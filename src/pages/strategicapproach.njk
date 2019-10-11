@@ -1,0 +1,125 @@
+{% extends "layout.njk" %}
+{% import 'macros/nav.njk' as nav %}
+{% import 'macros/hero.njk' as hero %}
+{% import 'macros/bubblebox.njk' as bubblebox %}
+
+{% block content %}
+  <header>
+    {{nav.active('strategicApproach')}}
+  </header>
+
+  <main class="strategicApproach">
+    {{hero.at('strategicApproach')}}
+
+    {{bubblebox.at('strategicApproach')}}
+
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md-4 col-lg-5 order-md-12">
+          <div class="titledesc">
+            <h2 class="titledesc_header">Our <br>Approach</h2>
+            <p class="titledesc_text">
+              Our approach is to achieve business value for your organisation.
+            </p>
+          </div>
+        </div>
+        <div class="offset-md-1 col-md-7 col-lg-6 order-md-1">
+
+          <div class="flowchart">
+            <div class="flowchart_item">
+              <div class="flowchart_icon">
+                <img src="img/approach_step1.svg" alt="Set Objectives">
+              </div>
+              <div class="flowchart_text">
+                Set <strong>Objectives</strong>
+              </div>
+            </div>
+            <div class="flowchart_line"></div>
+          
+            <div class="flowchart_item">
+              <div class="flowchart_icon">
+                <img src="img/approach_step2.svg" alt="Understand Target Audiences">
+              </div>
+              <div class="flowchart_text">
+                Understand <strong>Target Audiences</strong>
+              </div>
+            </div>
+            <div class="flowchart_line"></div>
+          
+            <div class="flowchart_item">
+              <div class="flowchart_icon">
+                <img src="img/approach_step3.svg" alt="Identify Target Audiences That Reach The Target Group">
+              </div>
+              <div class="flowchart_text">
+                Identify <strong>Target Audiences&nbsp;</strong>That Reach The Target Group
+              </div>
+            </div>
+            <div class="flowchart_line"></div>
+          
+            <div class="flowchart_item">
+              <div class="flowchart_icon">
+                <img src="img/approach_step4.svg" alt="Develop Messages>">
+              </div>
+              <div class="flowchart_text">
+                Develop <strong>Messages</strong>
+              </div>
+            </div>
+            <div class="flowchart_line"></div>
+          
+            <div class="flowchart_item">
+              <div class="flowchart_icon">
+                <img src="img/approach_step5.svg" alt="Execute And Deliver">
+              </div>
+              <div class="flowchart_text">
+                Execute And <strong>Deliver</strong>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col text-center mb-4">
+          <h2>Our Target Audiences</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 col-sm">
+          <div class="vertComp">
+            <div class="vertComp_icon"><img src="img/targetaud1.svg" alt="Customers"></div>
+            <div class="vertComp_text">Customers</div>
+          </div>
+        </div>
+        <div class="col-4 col-sm">
+          <div class="vertComp">
+            <div class="vertComp_icon"><img src="img/targetaud2.svg" alt="Employees"></div>
+            <div class="vertComp_text">Employees</div>
+          </div>
+        </div>
+        <div class="col-4 col-sm">
+          <div class="vertComp">
+            <div class="vertComp_icon"><img src="img/targetaud3.svg" alt="Shareholders"></div>
+            <div class="vertComp_text">Shareholders</div>
+          </div>
+        </div>
+        <div class="col-4 col-sm">
+          <div class="vertComp">
+            <div class="vertComp_icon"><img src="img/targetaud4.svg" alt="Media"></div>
+            <div class="vertComp_text">Media</div>
+          </div>
+        </div>
+        <div class="col-4 col-sm">
+          <div class="vertComp">
+            <div class="vertComp_icon"><img src="img/targetaud5.svg" alt="General public"></div>
+            <div class="vertComp_text">General public</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+{% endblock %}

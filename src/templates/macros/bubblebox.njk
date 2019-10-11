@@ -1,0 +1,31 @@
+{% macro at(page = 'home') %}
+<div class="container bubbleBox">
+  <div class="row">
+    <div class="col-md-5 bubbleBox_header">
+      <h2 class="bubbleBox_title">
+        {%if page == 'strategicApproach' %}Integrated Plan{% endif %}
+        {%if page == 'editorialServices' %}Creative Writing{% endif %}
+        {%if page == 'projectManagement' %}Turnkey Management{% endif %}
+        {%if page == 'aboutUs' %}PR & Editorial Services{% endif %}
+      </h2>
+      <img class="bubbleBox_img" src="img/subpage_bubble.svg">
+    </div>
+    <div class="col-md-7 bubbleBox_body">
+      <p class="bubbleBox_text">
+        {%if page == 'strategicApproach' %}
+        We develop a strategy to ensure that your stakeholders will see your messages consistently on multiple communication platforms.  Messages are created to be concise and credible, while campaigns are delivered on time with attention to detail. 
+        {% endif %}
+        {%if page == 'editorialServices' %}
+        We craft messages that resonate with your stakeholders.  In addition to the writing of finished pieces, our editorial services cover background research and interviews.
+        {% endif %}
+        {%if page == 'projectManagement' %}
+        We provide turnkey management of your communication projects. Through our network, we can pool together a team of agencies or individuals with the appropriate capabilities to see a project from start to end. We can also work with our clients’ appointed agencies to coordinate projects with a clear line of reporting.
+        {% endif %}
+        {%if page == 'aboutUs' %}
+        With a track record in agency, consultancy and in-house work, our principal consultant has been involved in a number of impactful and award-winning projects.
+        {% endif %}
+      </p>
+    </div>
+  </div>
+</div>
+{% endmacro %}

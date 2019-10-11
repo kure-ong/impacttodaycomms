@@ -1,0 +1,35 @@
+{% macro at(page='home') %}
+<div class="container hero">
+  {# <div class="row"> #}
+    {# <div class="col-12"> #}
+      <div class="hero_wrapper">
+        <div class="hero_visual">
+          <div class="hero_img{%if page == 'home' %} hero_img-index{% endif %}">
+            {%if page == 'home' %} <img src="img/hero_index.png"> {% endif %}      
+            {%if page == 'strategicApproach' %} <img src="img/hero_strategicapproach.jpg"> {% endif %}      
+            {%if page == 'editorialServices' %} <img src="img/hero_editorialservices.jpg"> {% endif %}      
+            {%if page == 'projectManagement' %} <img src="img/hero_projectmanagement.jpg"> {% endif %}      
+            {%if page == 'aboutUs' %} <img src="img/hero_aboutus.jpg"> {% endif %}      
+          </div>
+        </div>
+        <div class="hero_content">
+          <h1 class="hero_title">
+            {%if page == 'home' %}Integrated Business Communications{% endif %}
+            {%if page == 'strategicApproach' %}Strategic Approach{% endif %}
+            {%if page == 'editorialServices' %}Editorial Services{% endif %}
+            {%if page == 'projectManagement' %}Project Management{% endif %}
+            {%if page == 'aboutUs' %}About Us{% endif %}
+          </h1>
+          <p class="hero_text">
+            {%if page == 'home' %}We develop the communication programmes for your organisation to foster goodwill and understanding with your stakeholders.{% endif %}
+            {%if page == 'strategicApproach' %}Impact Today Communications provides the strategic direction and execution for your organisation to engage effectively with the people who matter to you.{% endif %}
+            {%if page == 'editorialServices' %}Impact Today Communications develop the persuasive content to appeal to your stakeholders for each communication platform.{% endif %}
+            {%if page == 'projectManagement' %}Impact Today Communications manages the communication programmes to achieve successful outcomes.{% endif %}
+            {%if page == 'aboutUs' %}Impact Today Communications was established in 1996 to provide public relations and editorial services to organisations in Singapore.{% endif %}
+          </p>
+        </div>
+      </div>
+    {# </div> #}
+  {# </div> #}
+</div>
+{% endmacro %}

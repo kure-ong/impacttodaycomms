@@ -1,0 +1,33 @@
+.sectionBox {
+  margin-bottom: 3rem;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 1.5rem;
+  }
+
+  &_header {
+    text-shadow: 2px 2px 6px $shadow;
+  }
+  
+  @include media-breakpoint-up(md) {
+
+    &_header {
+      transform: translateX(-40%);
+    }
+  
+    &_content {
+      position: absolute;
+      top: 50%;
+      left: rem(15);
+      right: rem(15);
+      transform: translateY(-50%);
+    }
+  
+    [class*='order-'] {
+      .sectionBox_header {
+        transform: translateX(35%);
+        text-align: right;
+      }
+    }
+  }
+}

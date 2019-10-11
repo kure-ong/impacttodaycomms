@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="89" height="89" viewBox="0 0 89 89">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        stroke: #d82591;
+        stroke-width: 5px;
+      }
+
+      .cls-4 {
+        fill: #d82591;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="89" height="89"/>
+    </clipPath>
+  </defs>
+  <g id="approach_step4" class="cls-2">
+    <g id="Ellipse_1" data-name="Ellipse 1" class="cls-3">
+      <circle class="cls-5" cx="44.5" cy="44.5" r="44.5"/>
+      <circle class="cls-1" cx="44.5" cy="44.5" r="42"/>
+    </g>
+    <g id="pen" transform="translate(17 15)">
+      <path id="Path_21" data-name="Path 21" class="cls-4" d="M40.406,16.248,24.484.325a.888.888,0,0,0-1.523.26L20.825,5.033,35.7,19.906l4.448-2.136A.888.888,0,0,0,40.406,16.248Z" transform="translate(16.269 0)"/>
+      <path id="Path_22" data-name="Path 22" class="cls-4" d="M34.255,4.231,19.594,5.453c-.974.121-1.785.328-2.064,1.6,0,0,0,0,0,0C13.552,26.154,0,44.79,0,44.79l3.194,3.194,15.14-15.14a5.344,5.344,0,1,1,2.519,2.519L5.712,50.5,8.906,53.7S27.541,40.144,46.638,36.168l0,0c1.272-.28,1.48-1.09,1.6-2.064l1.222-14.661L34.255,4.231Z" transform="translate(0 3.305)"/>
+    </g>
+  </g>
+</svg>

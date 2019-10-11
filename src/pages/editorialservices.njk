@@ -1,0 +1,74 @@
+{% extends "layout.njk" %}
+{% import 'macros/nav.njk' as nav %}
+{% import 'macros/hero.njk' as hero %}
+{% import 'macros/bubblebox.njk' as bubblebox %}
+
+{% block content %}
+  <header>
+    {{nav.active('editorialServices')}}
+  </header>
+
+  <main class="editorialServices">
+    {{hero.at('editorialServices')}}
+
+    {{bubblebox.at('editorialServices')}}
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-5">
+          <h2>Content Development</h2>
+        </div>
+        <div class="col-6 col-md">
+          <div class="horiComp">
+            <div class="horiComp_icon"><img src="img/contdev_cl.svg" alt="Corporate literature"></div>
+            <div class="horiComp_text">Corporate literature</div>
+          </div>
+          <div class="horiComp">
+            <div class="horiComp_icon"><img src="img/contdev_ml.svg" alt="Marketing literature"></div>
+            <div class="horiComp_text">Marketing literature</div>
+          </div>
+          <div class="horiComp">
+            <div class="horiComp_icon"><img src="img/contdev_pt.svg" alt="Presentations"></div>
+            <div class="horiComp_text">Presentations</div>
+          </div>
+          <div class="horiComp">
+            <div class="horiComp_icon"><img src="img/contdev_sp.svg" alt="Speeches"></div>
+            <div class="horiComp_text">Speeches</div>
+          </div>
+          <div class="horiComp">
+            <div class="horiComp_icon"><img src="img/contdev_mk.svg" alt="Media Kits"></div>
+            <div class="horiComp_text">Media Kits</div>
+          </div>
+          <div class="horiComp">
+            <div class="horiComp_icon"><img src="img/contdev_va.svg" alt="Video and AV scripts"></div>
+            <div class="horiComp_text">Video and AV scripts</div>
+          </div>
+        </div>
+        <div class="col-6 col-md">
+          <div class="horiComp">
+            <div class="horiComp_icon"><img src="img/contdev_ec.svg" alt="Exhibition content"></div>
+            <div class="horiComp_text">Exhibition content</div>
+          </div>
+          <div class="horiComp">
+            <div class="horiComp_icon"><img src="img/contdev_cs.svg" alt="Customer case studies"></div>
+            <div class="horiComp_text">Customer case studies</div>
+          </div>
+          <div class="horiComp">
+            <div class="horiComp_icon"><img src="img/contdev_nl.svg" alt="Newsletters"></div>
+            <div class="horiComp_text">Newsletters</div>
+          </div>
+          <div class="horiComp">
+            <div class="horiComp_icon"><img src="img/contdev_ad.svg" alt="Advertisements"></div>
+            <div class="horiComp_text">Advertisements</div>
+          </div>
+          <div class="horiComp">
+            <div class="horiComp_icon"><img src="img/contdev_sm.svg" alt="Social media content"></div>
+            <div class="horiComp_text">Social media content</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+.footer {
+  padding-top: 7vw;
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 6rem;
+  }
+
+  &_top {
+    background-color: $white;
+  }
+
+  &_mid {
+    background-color: $footer-bg;
+    padding: 1.5rem 0;
+  }
+  
+  &_btm {
+    background-color: $copyright-bg;
+    padding: 0.5rem 0;
+  }
+  
+  &_header {
+    font-size: rem(10);
+    color: $white;
+  }
+  
+  &_text {
+    font-size: rem(14);
+    color: $white;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  &_copyright {
+    text-align: center;
+    font-size: rem(14);
+    color: $copyright-color;
+  }
+}

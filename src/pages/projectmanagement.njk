@@ -1,0 +1,54 @@
+{% extends "layout.njk" %}
+{% import 'macros/nav.njk' as nav %}
+{% import 'macros/hero.njk' as hero %}
+{% import 'macros/bubblebox.njk' as bubblebox %}
+
+{% block content %}
+  <header>
+    {{nav.active('projectManagement')}}
+  </header>
+
+  <main class="projectManagement">
+    {{hero.at('projectManagement')}}
+
+    {{bubblebox.at('projectManagement')}}
+  
+    <div class="container">
+      <div class="row">
+        <div class="col text-center mb-4">
+          <h2>Projects</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6 col-sm">
+          <div class="vertComp">
+            <div class="vertComp_icon"><img src="img/proj_cd.svg" alt="Creative Development"></div>
+            <div class="vertComp_text">Creative Development</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm">
+          <div class="vertComp">
+            <div class="vertComp_icon"><img src="img/proj_vp.svg" alt="Video Production"></div>
+            <div class="vertComp_text">Video Production</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm">
+          <div class="vertComp">
+            <div class="vertComp_icon"><img src="img/proj_em.svg" alt="Event Management"></div>
+            <div class="vertComp_text">Event Management</div>
+          </div>
+        </div>
+        <div class="col-6 col-sm">
+          <div class="vertComp">
+            <div class="vertComp_icon"><img src="img/proj_mem.svg" alt="Media Event Management"></div>
+            <div class="vertComp_text">Media Event Management</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+{% endblock %}

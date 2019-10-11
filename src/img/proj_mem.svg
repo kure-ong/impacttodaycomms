@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="89" height="89" viewBox="0 0 89 89">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="89" height="89" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="proj_mem" clip-path="url(#clip-path)">
+    <g id="Ellipse_1" data-name="Ellipse 1" fill="none" stroke="#d82591" stroke-width="5">
+      <circle cx="44.5" cy="44.5" r="44.5" stroke="none"/>
+      <circle cx="44.5" cy="44.5" r="42" fill="none"/>
+    </g>
+    <path id="microphone" d="M29.781,20.539a13.837,13.837,0,0,0-1.35-10.922c.043.06-18.78,19.036-18.915,18.917a14.052,14.052,0,0,0,10.819,1.478c-.026-.091,9.37-9.486,9.446-9.472ZM26.423,6.591a14.485,14.485,0,0,0-10-4.195A14.063,14.063,0,0,0,2.376,16.476a14.822,14.822,0,0,0,4.16,10c.005,0,19.768-19.723,19.887-19.885ZM46.286,43.947s.459-3.967-.685-5.112c-.076-.076-13.2-16.1-13.2-16.1L22.636,32.5,38.657,45.777c1.069,1.22,5.187.611,5.187.611l3.28,2.976,2.289-2.289Z" transform="translate(18.624 18.604)" fill="#d82591"/>
+  </g>
+</svg>

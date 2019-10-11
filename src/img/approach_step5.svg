@@ -1,0 +1,30 @@
+<svg id="approach_step5" xmlns="http://www.w3.org/2000/svg" width="89" height="89" viewBox="0 0 89 89">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #d82591;
+      }
+
+      .cls-1 {
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        fill: #d82591;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Ellipse_1" data-name="Ellipse 1" class="cls-1">
+    <circle class="cls-3" cx="44.5" cy="44.5" r="44.5"/>
+    <circle class="cls-4" cx="44.5" cy="44.5" r="42"/>
+  </g>
+  <path id="rocket" class="cls-2" d="M31.625,2.875,17.25,17.25H8.625L0,28.75S9.138,26.206,14.468,27.4L0,46,18.952,31.258C21.6,37.307,17.25,46,17.25,46l11.5-8.625V28.75L43.125,14.375,46,0Z" transform="translate(22 22)"/>
+</svg>

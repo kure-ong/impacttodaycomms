@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="89" height="89" viewBox="0 0 89 89">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="89" height="89" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="proj_cd" clip-path="url(#clip-path)">
+    <g id="Ellipse_1" data-name="Ellipse 1" fill="none" stroke="#d82591" stroke-width="5">
+      <circle cx="44.5" cy="44.5" r="44.5" stroke="none"/>
+      <circle cx="44.5" cy="44.5" r="42" fill="none"/>
+    </g>
+    <path id="brush" d="M45.3,12.1c-1.341,1.63-4.058,4.951-7.309,8.93-1.877,2.3-4.132,5.058-6.17,7.555l-6.3-6.392c5.695-5.068,12.744-11.333,15.292-13.576,4.532-3.994,8.506-6.37,9.37-5.4.541.538-.9,4.026-4.887,8.883ZM30.723,29.933c-1.921,2.351-3.574,4.376-4.586,5.618l-7.454-7.264c1.208-1.075,3.22-2.865,5.552-4.939Zm-5.7,6.979v-.02C20.7,53.494,1.471,43.95,1.471,43.95s8.068,1.017,8.068-6.508c0-7.295,7.414-7.953,7.869-7.987l7.634,7.439a.179.179,0,0,1-.015.018Z" transform="translate(18.529 19.995)" fill="#d82591"/>
+  </g>
+</svg>

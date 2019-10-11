@@ -1,0 +1,47 @@
+{% extends "layout.njk" %}
+{% import 'macros/nav.njk' as nav %}
+{% import 'macros/hero.njk' as hero %}
+{% import 'macros/bubblebox.njk' as bubblebox %}
+
+{% block content %}
+  <header>
+    {{nav.active('aboutUs')}}
+  </header>
+
+  <main class="aboutUs">
+    {{hero.at('aboutUs')}}
+
+    {{bubblebox.at('aboutUs')}}
+
+    <div class="container mb-5 pb-5">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="titledesc vertMiddler-md">
+            <h2 class="titledesc_header">Multi-Industry <br>Expertise</h2>
+            <p class="titledesc_text">
+              Our clients are drawn from multinational and local companies, and government agencies. We do not focus on any particular industry, but we specialise in being communication experts.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="tree">
+            <img class="d-none d-sm-block" src="img/multiindexp_diagram.svg" alt="Multi-Industry Expertise">
+            <img class="d-block d-sm-none" src="img/multiindexp_diagram_vert.svg" alt="Multi-Industry Expertise">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h2>Contact Us</h2>
+          <a href="mailto:enquiries@impact-today.sg" class="bigLink" target="_blank">enquiries@impact-today.sg</a>
+          <p>for information on our past projects.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+{% endblock %}

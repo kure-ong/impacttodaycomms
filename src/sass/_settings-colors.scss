@@ -1,6 +1,15 @@
-$white: #fff;
+$white: #eee;
 $black: #242424;
 
-$c-pri: '';
-$c-sec: '';
-$c-ter: '';
+$itc_darkblue: #161A4B;
+$itc_pink: #D82591;
+$itc_teal: #12BDCF;
+
+$c-pri: $itc_pink;
+$c-sec: $itc_teal;
+$c-ter: $itc_darkblue;
+
+$shadow: #0C3439;
+$footer-bg: #1A2A2B;
+$copyright-bg: #0F1A1C;
+$copyright-color: #8B9697;

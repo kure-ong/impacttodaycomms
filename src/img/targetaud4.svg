@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="89" height="89" viewBox="0 0 89 89">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="89" height="89" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="targetaud4" clip-path="url(#clip-path)">
+    <g id="Ellipse_1" data-name="Ellipse 1" fill="none" stroke="#d82591" stroke-width="5">
+      <circle cx="44.5" cy="44.5" r="44.5" stroke="none"/>
+      <circle cx="44.5" cy="44.5" r="42" fill="none"/>
+    </g>
+    <path id="video-camera" d="M20.438,12.516a8.516,8.516,0,1,1,8.516,8.516A8.517,8.517,0,0,1,20.438,12.516ZM0,12.516a8.516,8.516,0,1,1,8.516,8.516A8.517,8.517,0,0,1,0,12.516ZM40.875,29.547V24.438a3.416,3.416,0,0,0-3.406-3.406H3.406A3.416,3.416,0,0,0,0,24.438V41.469a3.416,3.416,0,0,0,3.406,3.406H37.469a3.416,3.416,0,0,0,3.406-3.406V36.359L54.5,44.875V21.031Zm-6.812,8.516H6.813V27.844h27.25Z" transform="translate(17 20)" fill="#d82591"/>
+  </g>
+</svg>

@@ -1,25 +1,60 @@
-*, *::before, *::after {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+*,
+*::before,
+*::after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-    position: relative;
-    background-color: $black !important;
+  position: relative;
+  color: $white;
+
+  // @include media-breakpoint-up(lg) {
+  //   padding-left: 10vw;
+  //   padding-right: 10vw;
+  // }  
+  // @include media-breakpoint-up(xl) {
+  //   padding-left: 12vw;
+  //   padding-right: 12vw;
+  // }  
 }
 
-h1,.h1,h2,.h2,h3,.h3,h4,.h4 {
-    font-weight: 700;
+h1,
+.h1,
+h2,
+.h2 {
+  font-weight: 800;
+  line-height: 1.1;
 }
 
-h1,.h1 {
-    font-size: calc(1.5rem + 1.5vw);
+h1,
+.h1 {
+  font-size: 10vw;
+  
+  @include media-breakpoint-up(sm) {
+    font-size: calc(2.5rem + 2vw);
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 4.2rem;
+  }
 }
 
-h2, .h2 {
-    font-size: calc(1rem + 1.2vw);
+h2,
+.h2 {
+  font-size: calc(1.3rem + 2vw);
+  color: $c-sec;
+
+  @include media-breakpoint-up(xl) {
+    font-size: rem(52);
+  }
 }
 
-h3,.h3 {
+h3,
+.h3 {
+}
 
+
+img {
+  @extend .img-fluid;
 }

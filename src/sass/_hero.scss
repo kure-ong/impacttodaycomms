@@ -1,0 +1,104 @@
+.hero {
+  position: relative;
+  // height: rem(600);
+
+  @include media-breakpoint-up(md) {
+    height: 60vw;
+    min-height: rem(500);
+    max-height: rem(700);
+    margin-bottom: -4rem;
+  }
+
+  &_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1rem 0 2rem;
+    
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      top: 50%;
+      left: rem(15);
+      right: rem(15);
+      transform: translateY(-50%);
+      flex-direction: row;
+    }
+  }
+
+  &_content {
+    @extend .order-md-1;
+    flex: 1 1 50%;
+  }
+
+  &_title, &_text {
+    @include media-breakpoint-up(md) {
+      width: 80%;
+    }
+  }
+
+  &_title {
+    margin-top: 1.5vw;
+    margin-bottom: 1.5rem;
+  }
+
+  &_visual {
+    @extend .order-md-12;
+    flex: 1 1 40%;
+    text-align: right;
+    position: relative;
+
+  }
+
+  &_img {
+    max-width: 70%;
+    position: relative;
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-up(md) {
+      max-width: 100%;
+      margin-bottom: 0;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 80%;
+      height: 100%;
+      background-color: $c-pri;
+      transform: translate(3vw,3vw);
+
+      @include media-breakpoint-up(md) {
+        transform: translate(-2.5vw,2.5vw);
+        left: 0;
+        right: initial;
+      }
+
+      @include media-breakpoint-up(xl) {
+        transform: translate(-2rem,2rem);
+      }
+    }
+
+    &-index {
+      max-width: 50%;
+      margin-bottom: 0;
+      
+      @include media-breakpoint-up(md) {
+        max-width: 100%;
+      }
+
+      &::after {
+        content: none;
+      }
+    }
+
+    img {
+      width: 100%;
+      z-index: 1;
+      position: relative;
+    }
+  }
+}
